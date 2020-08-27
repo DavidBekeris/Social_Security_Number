@@ -1,0 +1,13 @@
+C:\Workspace\ECUtbildning\C#\Social_Security_Number\bin\Debug\netcoreapp3.1\Social_Security_Number.exe
+C:\Workspace\ECUtbildning\C#\Social_Security_Number\bin\Debug\netcoreapp3.1\Social_Security_Number.deps.json
+C:\Workspace\ECUtbildning\C#\Social_Security_Number\bin\Debug\netcoreapp3.1\Social_Security_Number.runtimeconfig.json
+C:\Workspace\ECUtbildning\C#\Social_Security_Number\bin\Debug\netcoreapp3.1\Social_Security_Number.runtimeconfig.dev.json
+C:\Workspace\ECUtbildning\C#\Social_Security_Number\bin\Debug\netcoreapp3.1\Social_Security_Number.dll
+C:\Workspace\ECUtbildning\C#\Social_Security_Number\bin\Debug\netcoreapp3.1\Social_Security_Number.pdb
+C:\Workspace\ECUtbildning\C#\Social_Security_Number\obj\Debug\netcoreapp3.1\Social_Security_Number.csprojAssemblyReference.cache
+C:\Workspace\ECUtbildning\C#\Social_Security_Number\obj\Debug\netcoreapp3.1\Social_Security_Number.AssemblyInfoInputs.cache
+C:\Workspace\ECUtbildning\C#\Social_Security_Number\obj\Debug\netcoreapp3.1\Social_Security_Number.AssemblyInfo.cs
+C:\Workspace\ECUtbildning\C#\Social_Security_Number\obj\Debug\netcoreapp3.1\Social_Security_Number.csproj.CoreCompileInputs.cache
+C:\Workspace\ECUtbildning\C#\Social_Security_Number\obj\Debug\netcoreapp3.1\Social_Security_Number.dll
+C:\Workspace\ECUtbildning\C#\Social_Security_Number\obj\Debug\netcoreapp3.1\Social_Security_Number.pdb
+C:\Workspace\ECUtbildning\C#\Social_Security_Number\obj\Debug\netcoreapp3.1\Social_Security_Number.genruntimeconfig.cache
