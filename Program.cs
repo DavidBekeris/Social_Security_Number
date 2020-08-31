@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using System.Reflection.Metadata.Ecma335;
 using static System.Console;
 
 namespace Social_Security_Number
@@ -9,9 +10,25 @@ namespace Social_Security_Number
         static void Main(string[] args)
         {
 
-            Console.Write("Enter your social security number (YYMMDD-XXXX): ");
 
-            string socialSecurityNumber = Console.ReadLine();
+            string socialSecurityNumber;
+
+            if (args.Length > 0)
+            {
+                Console.WriteLine($"Your numbers: {args[0]}");
+                socialSecurityNumber = args[0];
+
+            }
+            else
+            {
+                Console.Write("Enter your social security number (YYMMDD-XXXX): ");
+                socialSecurityNumber = args[1];
+            }
+
+
+
+
+
 
             string gender;
 
@@ -34,7 +51,6 @@ namespace Social_Security_Number
                 age--;
             }
 
-            // Git push
 
             Console.WriteLine("You're a {0} and {1} years old.", gender, age);
             //Console.WriteLine($"This is a {gender}, and the age is {age}");
