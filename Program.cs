@@ -9,20 +9,27 @@ namespace Social_Security_Number
     {
         static void Main(string[] args)
         {
-
-
+            string firstName="";
+            string lastName="";
+            //string firstAndLastName = firstName + " " + lastName;
             string socialSecurityNumber;
+
 
             if (args.Length > 0)
             {
-                Console.WriteLine($"Your numbers: {args[0]}");
-                socialSecurityNumber = args[0];
-
+                Console.WriteLine($"Your name: {args[0]} {args[1]} \nSocial security number: {args[2]}");
+                firstName = args[0];
+                lastName = args[1];
+                socialSecurityNumber = args[2];
             }
             else
             {
+                Console.WriteLine("Enter your first name:");
+                firstName = Console.ReadLine();
+                Console.WriteLine("Enter your last name:");
+                lastName = Console.ReadLine();
                 Console.Write("Enter your social security number (YYMMDD-XXXX): ");
-                socialSecurityNumber = args[1];
+                socialSecurityNumber = Console.ReadLine();
             }
 
 
@@ -37,7 +44,7 @@ namespace Social_Security_Number
 
             int genderNumber = int.Parse(socialSecurityNumber.Substring(socialSecurityNumber.Length - 2, 1));
 
-            gender = genderNumber % 2 != 0 ? "male" : "female";
+            gender = genderNumber % 2 != 0 ? "Male" : "Female";
 
             //int ageNumber = int.Parse(socialSecurityNumber.Substring(socialSecurityNumber.Length - 11, 6));
             string ageNumber = socialSecurityNumber.Substring(socialSecurityNumber.Length - 11, 6);
@@ -51,12 +58,12 @@ namespace Social_Security_Number
                 age--;
             }
 
-
-            Console.WriteLine("You're a {0} and {1} years old.", gender, age);
+            Console.Clear();
+            Console.WriteLine("Name: {0} {1} \nSocial Security number: {2} \nGender: {3} \nAge: {4}", firstName, lastName, socialSecurityNumber, gender, age);
             //Console.WriteLine($"This is a {gender}, and the age is {age}");
 
             // For testing purposes
-            Console.WriteLine(ageNumber);
+            Console.WriteLine("\n\n{0}", ageNumber);
             Console.WriteLine(genderNumber);
             
         }
