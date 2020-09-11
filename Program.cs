@@ -9,11 +9,10 @@ namespace Social_Security_Number
     {
         static void Main(string[] args)
         {
-            string firstName="";
-            string lastName="";
+            string firstName = "";
+            string lastName = "";
             //string firstAndLastName = firstName + " " + lastName;
             string socialSecurityNumber;
-
 
             if (args.Length > 0)
             {
@@ -32,31 +31,14 @@ namespace Social_Security_Number
                 socialSecurityNumber = Console.ReadLine();
             }
 
-
-
-
-
-
             string gender;
 
             // Chooses the slot from social security number to use to determine what gender the person is
             //string genderNumber = socialSecurityNumber.Substring(9, 1);
-
-            int genderNumber = int.Parse(socialSecurityNumber.Substring(socialSecurityNumber.Length - 2, 1));
-
-            gender = genderNumber % 2 != 0 ? "Male" : "Female";
-
-            //int ageNumber = int.Parse(socialSecurityNumber.Substring(socialSecurityNumber.Length - 11, 6));
-            string ageNumber = socialSecurityNumber.Substring(socialSecurityNumber.Length - 11, 6);
-
-            DateTime birthDate = DateTime.ParseExact(ageNumber, "yyMMdd", CultureInfo.InvariantCulture);
-
-            int age = DateTime.Now.Year - birthDate.Year;
-
-            if ((birthDate.Month > DateTime.Now.Month) || (birthDate.Month == DateTime.Now.Month && birthDate.Day > DateTime.Now.Day))
-            {
-                age--;
-            }
+            int genderNumber, age;
+            string ageNumber;
+            GetGender(socialSecurityNumber, out gender, out genderNumber);
+            CalculateAge(socialSecurityNumber, out ageNumber, out age);
 
             Console.Clear();
             Console.WriteLine("Name: {0} {1} \nSocial Security number: {2} \nGender: {3} \nAge: {4}", firstName, lastName, socialSecurityNumber, gender, age);
@@ -65,7 +47,28 @@ namespace Social_Security_Number
             // For testing purposes
             Console.WriteLine("\n\n{0}", ageNumber);
             Console.WriteLine(genderNumber);
-            
+
+        }
+
+        private static void GetGender(string socialSecurityNumber, out string gender, out int genderNumber)
+        {
+            genderNumber = int.Parse(socialSecurityNumber.Substring(socialSecurityNumber.Length - 2, 1));
+            gender = genderNumber % 2 != 0 ? "Male" : "Female";
+
+            //int ageNumber = int.Parse(socialSecurityNumber.Substring(socialSecurityNumber.Length - 11, 6));
+            string ageNumber;
+        }
+
+        private static void CalculateAge(string socialSecurityNumber, out string ageNumber, out int age)
+        {
+            ageNumber = socialSecurityNumber.Substring(socialSecurityNumber.Length - 11, 6);
+            DateTime birthDate = DateTime.ParseExact(ageNumber, "yyMMdd", CultureInfo.InvariantCulture);
+
+            age = DateTime.Now.Year - birthDate.Year;
+            if ((birthDate.Month > DateTime.Now.Month) || (birthDate.Month == DateTime.Now.Month && birthDate.Day > DateTime.Now.Day))
+            {
+                age--;
+            }
         }
     }
 }
