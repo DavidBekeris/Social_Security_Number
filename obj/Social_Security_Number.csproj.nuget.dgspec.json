@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Workspace\\ECUtbildning\\C#\\Social_Security_Number\\Social_Security_Number.csproj": {}
+    "C:\\Workspace\\School\\Social_Security_Number\\Social_Security_Number.csproj": {}
   },
   "projects": {
-    "C:\\Workspace\\ECUtbildning\\C#\\Social_Security_Number\\Social_Security_Number.csproj": {
+    "C:\\Workspace\\School\\Social_Security_Number\\Social_Security_Number.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Workspace\\ECUtbildning\\C#\\Social_Security_Number\\Social_Security_Number.csproj",
+        "projectUniqueName": "C:\\Workspace\\School\\Social_Security_Number\\Social_Security_Number.csproj",
         "projectName": "Social_Security_Number",
-        "projectPath": "C:\\Workspace\\ECUtbildning\\C#\\Social_Security_Number\\Social_Security_Number.csproj",
+        "projectPath": "C:\\Workspace\\School\\Social_Security_Number\\Social_Security_Number.csproj",
         "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-        "outputPath": "C:\\Workspace\\ECUtbildning\\C#\\Social_Security_Number\\obj\\",
+        "outputPath": "C:\\Workspace\\School\\Social_Security_Number\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
